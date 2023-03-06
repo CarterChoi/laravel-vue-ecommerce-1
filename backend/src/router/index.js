@@ -35,7 +35,6 @@ const routes = [
         meta: {
             requiresGuest: true
         },
-
         component: Login
     },
     {

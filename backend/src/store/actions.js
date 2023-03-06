@@ -1,7 +1,7 @@
 import axiosClient from "../axios";
 
 export function login({commit}, data) {
-    console.log('axiosClientBefore: ' + data)
+    debugger
     return axiosClient.post('/login', data)
         .then(({data}) => {
             console.log('axiosClientThen: ' + data)
