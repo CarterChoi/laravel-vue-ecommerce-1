@@ -67,9 +67,10 @@ function login() {
             loading.value = false;
             router.push({name: 'app.dashboard'})
         })
-        .catch(({response}) => {
-            loading.value = false;
-            errorMsg.value = response.data.message;
+        .catch(err => {
+            console.log('loginCatch',err)
+            //loading.value = false;
+            //errorMsg.value = response.data.message;
         })
 }
 
