@@ -14,8 +14,7 @@
             <div class="flex items-center justify-between">
                 <div class="text-sm">
                     <router-link :to="{name: 'login'}" class="font-medium text-indigo-600 hover:text-indigo-500">
-                        Remember your
-                        password?
+                        Remember your password?
                     </router-link>
                 </div>
             </div>

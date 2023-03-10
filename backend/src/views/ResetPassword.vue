@@ -19,8 +19,7 @@
 
             <div class="flex items-center justify-between">
                 <div class="text-sm">
-                    <router-link :to="{name: 'login'}" class="font-medium text-indigo-600 hover:text-indigo-500">Go
-                        back to Login
+                    <router-link :to="{name: 'login'}" class="font-medium text-indigo-600 hover:text-indigo-500">Go back to Login
                     </router-link>
                 </div>
             </div>
