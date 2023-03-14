@@ -6,7 +6,9 @@
                     {{ title }}
                 </h2>
             </div>
-            <slot></slot>
+            <form class="mt-8 space-y-6" action="#" method="POST">
+                <slot></slot>
+            </form>
         </div>
     </div>
 </template>
