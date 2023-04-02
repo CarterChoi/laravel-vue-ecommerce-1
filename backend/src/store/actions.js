@@ -8,6 +8,10 @@ export function login({commit}, data) {
             commit('setToken', data.token)
             return data;
         })
+        .catch((err) => {
+            console.error('axiosClientCatch:', err);
+            return Promise.reject(err);
+        });
 }
 
 export function logout({commit}) {

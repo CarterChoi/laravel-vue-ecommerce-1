@@ -1,6 +1,6 @@
 <template>
     <GuestLayout title="Sign in to your account">
-        <form class="mt-8 space-y-6" action="#" method="POST" >
+        <form class="mt-8 space-y-6" action="#" method="POST" @submit.prevent="login">
             <input type="hidden" name="remember" value="true"/>
             <div class="-space-y-px rounded-md shadow-sm">
                 <div>
@@ -68,9 +68,10 @@ function login() {
             router.push({name: 'app.dashboard'})
         })
         .catch(err => {
-            console.log('loginCatch',err)
-            //loading.value = false;
-            //errorMsg.value = response.data.message;
+            console.log('loginCatch', err)
+            console.log('Error object:', JSON.stringify(err, null, 2));
+            loading.value = false;
+            errorMsg.value = err.response?.data?.message || 'An error occurred during login';
         })
 }
 

@@ -69,7 +69,7 @@ import {Bars3Icon, BackwardIcon, UserIcon} from '@heroicons/vue/20/solid'
 import {Menu, MenuButton, MenuItems, MenuItem} from '@headlessui/vue'
 import {ChevronDownIcon} from '@heroicons/vue/20/solid'
 import router from "../router";
-import store from "../store/index.js";
+import store from "../store";
 
 
 const emit = defineEmits(['toggle-sidebar'])
