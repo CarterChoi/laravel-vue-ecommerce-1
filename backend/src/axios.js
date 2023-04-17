@@ -14,6 +14,7 @@ axiosClient.interceptors.request.use(config => {
 axiosClient.interceptors.response.use(response => {
     return response;
 }, error => {
+    console.log(error);
     if (error.response.status === 401) {
         sessionStorage.removeItem('TOKEN')
         //store.commit('setToken', null)
